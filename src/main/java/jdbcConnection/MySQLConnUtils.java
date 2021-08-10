@@ -1,4 +1,4 @@
-package MySQL;
+package jdbcConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,11 +9,11 @@ public class MySQLConnUtils {
         String dbName = "automationfc";
         String userName ="root";
         String password = "1234";
-        return getMySQLConnecttion(hostName, dbName, userName, password);
+        return getMySQLConnection(hostName, dbName, userName, password);
 
     }
 
-    public static Connection getMySQLConnecttion(String hostName, String dbName, String userName, String password){
+    public static Connection getMySQLConnection(String hostName, String dbName, String userName, String password){
         Connection conn = null;
         try {
             String connectionURL = "jdbc:mysql://" + hostName + ":3306/" + dbName;

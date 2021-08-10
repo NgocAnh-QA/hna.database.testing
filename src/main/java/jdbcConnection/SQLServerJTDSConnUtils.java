@@ -1,4 +1,4 @@
-package SQLServer;
+package jdbcConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
